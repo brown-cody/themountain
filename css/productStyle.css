@@ -1,0 +1,100 @@
+
+
+.product {
+    position:relative;
+    padding:.5em;
+    opacity:.7;
+   /* z-index:-1;*/
+}
+
+.product h3 {
+    position:absolute;
+    top:.35em;
+    left:1.4em;
+    background:black;
+    color:white;
+    padding:.4em;
+    z-index: -1;
+    text-align: left;
+}
+
+.product .bikePrice {
+    top:2.25em;
+    left:1.4em;
+    background:white;
+    color:black;
+    
+}
+
+.product .twoLine {
+    top:3.4em;
+}
+
+.productImage {
+    width:100%;
+    position:relative;
+    z-index: -1;
+}
+
+.product:hover {
+    opacity:1;
+}
+
+h3 {
+    text-align: center;
+}
+
+footer {
+    padding:1.5em;
+    clear:both;
+}
+
+.single {
+    padding:1em 1em 0 1em;
+    width:calc(100% - 2em);
+}
+
+.remove {
+    display:none;
+}
+
+@media only screen and (min-width:480px) {
+    
+    .double {
+        padding:1em;
+        width:calc(50% - 2em);
+    }
+    
+    .left {
+        padding-right:.5em;
+        padding-bottom: 0;
+        width:calc(50% - 1.5em);
+    }
+    
+    .right {
+        padding-left:.5em;
+        padding-bottom: 0;
+        width:calc(50% - 1.5em);
+    }
+    
+    .remove {
+        display:inline;
+    }
+    
+}
+
+@media only screen and (min-width:1050px)   {
+    
+    .adventureTitle {
+        font-size: 2em;
+    }
+    
+    .triple {
+        padding:1em;
+        width:calc(33% - 2em);
+    }
+    
+    
+    
+    
+}

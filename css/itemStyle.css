@@ -1,0 +1,118 @@
+.price {
+    display:inline;
+    margin:1em;
+    font-weight:bold;
+    font-size: 1.4em;
+}
+
+button {
+    background:white;
+    font-family: "Monda", "Century Gothic", "Arial", sans-serif;
+    font-weight:bold;
+    padding:1em;
+    font-size:1.2em;
+    border: 4px solid black;
+}
+
+.buttonHover {
+    display:inline;
+}
+
+.buttonHover:hover {
+    opacity:.6;
+}
+
+.purchase {
+    width:17em;
+    margin:auto;
+}
+
+.back {
+    position:static;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top:1em;
+}
+
+.back p {
+    display:inline
+}
+
+.back a {
+    text-decoration: none;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
+
+.arrow {
+    width:8px;
+    position:relative;
+    top:2px;
+    left:-4px;
+}
+
+.partsArrow {
+    margin-top: 1em;
+    
+}
+
+@media only screen and (min-width:600px)   {
+
+    .back {
+        position:relative;
+        top:2.6em;
+        left:1em;
+        text-align: left;
+        max-width: 1390px;
+        margin:auto;
+    }
+    
+    .partsArrow {
+        top:.5em;
+    
+    }
+}
+    
+@media only screen and (min-width:1050px)   {
+    h3 {
+        font-size:2em;
+    }
+    
+    .bikePrice {
+        top:2.28em !important;
+    }
+    
+    .purchase {
+        width:22em;
+    }
+    
+    .price {
+        font-size: 2em;
+    }
+    
+    button {
+        font-size: 1.6em;
+        padding:.7em;
+    }
+    
+    .back {
+        font-size:1.5em;
+        top:2em;
+    }
+    
+    .arrow {
+        width:11px;
+        position:relative;
+        top:2px;
+        left:-4px;
+    }
+    
+    .partsArrow {
+        top:.6em;
+    }
+    
+    
+    
+}

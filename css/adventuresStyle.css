@@ -1,0 +1,73 @@
+input[type=submit] {
+    background:white;
+    font-family: "Monda", "Century Gothic", "Arial", sans-serif;
+    font-weight:bold;
+    padding:.7em;
+    font-size:1.2em;
+    border: 4px solid black;
+}
+
+.subButton {
+    width:6.3em;
+    margin:auto;
+    margin-top:2.5em;
+}
+
+.subButton:hover {
+    opacity:.6;
+}
+
+.disappear {
+    visibility: hidden;
+}
+
+.noBook {
+    position:relative;
+    left:3.0em;
+    transform: translateX(50%);
+}
+
+.back {
+    position:static;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+
+.field {
+    width:calc(100% - .5em);
+    height:2em;
+    font-size:1.5em;
+    color:#888888;
+    padding-left:.5em;
+    border:2px solid black;
+        
+}
+
+.listItem {
+    font-size:1em;
+}
+
+.centerList {
+    width:17em;
+    margin:auto;
+    margin-bottom:1em;
+}
+
+@media only screen and (min-width:600px)   {
+
+    .back {
+        position:relative;
+        text-align: left;
+        margin:auto;
+    }
+}
+
+@media only screen and (min-width:1050px)   {
+
+    .listItem {
+        font-size:1.3em;
+    }
+    
+}

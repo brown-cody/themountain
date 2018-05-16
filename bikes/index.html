@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bikes - The Mountain</title>
+                
+        <meta name="description" content="The Mountain sells bicycles, bicycle parts, and provides guided tours through the world class trails and landscape of beautiful Bozeman, Montana.">
+                
+        <!--<?php include 'php/mainImports.php';?>-->
+        <meta name="author" content="Cody Brown">
+        
+        <meta name="keywords" content="the mountain, mountain, bozeman, montana, bicycle, bike, cycle, parts, tours, excursion, adventure">
+        
+        <!-- fix mobile sizing-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <!-- import fonts from Google fonts -->
+        <!-- CSS validator doesnt like the | operator in the address to add more than one font in one tag, google recommends this method. It works, just doesnt validate -->
+        <link href="https://fonts.googleapis.com/css?family=Monda:70" rel="stylesheet">
+        
+        <!-- Add favicon to Browser tab -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+        <!-- Add icons for mobile devices that add site to home screen -->
+        <link href="http://themountain.pickinio.com/images/mobile_icons/152x152.png" rel="apple-touch-icon" sizes="152x152">
+        <link href="http://themountain.pickinio.com/images/mobile_icons/180x180.png" rel="apple-touch-icon" sizes="180x180">
+        <link href="http://themountain.pickinio.com/images/mobile_icons/192x192.png" rel="icon" sizes="192x192">
+        <link href="http://themountain.pickinio.com/images/mobile_icons/128x128.png" rel="icon" sizes="128x128">
+        
+        <!-- Import normalize CSS -->
+        <link type="text/css" rel="stylesheet" href="../css/normalize.css">
+        
+        <!-- Import main CSS -->
+        <link type="text/css" rel="stylesheet" href="../css/mainStyle.css">
+        <link type="text/css" rel="stylesheet" href="../css/productStyle.css">
+                
+        <!--Modernizr -->
+        <script src="../javascript/modernizr-2.8.3.min.js"></script>
+        
+        <!--hamburger manu changes to X-->
+        <script type="text/javascript">
+            function hamburgerMenu() {
+                var image = document.getElementById("menuPicID").src;
+                
+                if (image == "http://themountain.pickinio.com/images/menu/burger.png") {
+                    document.getElementById("menuPicID").src = "http://themountain.pickinio.com/images/menu/x.png";
+                } else {
+                    document.getElementById("menuPicID").src = "http://themountain.pickinio.com/images/menu/burger.png";
+                }
+            }
+            
+        </script>
+        
+        
+    </head>
+    <body>
+        <div class="pageContainer">
+            <header>
+                           
+                <a class="titleLink" href="http://themountain.pickinio.com">
+                    <div class="titleContain">
+                        <img class="logo" src="../images/logo-small.png" alt="The Mountain Logo">
+                        <h1 class="pageTitle">THE MOUNTAIN</h1>
+                    </div>
+                </a>
+                
+                <nav id="mainNav">
+                    <input id="box" class="boxActivate" type="checkbox" name="menu" onclick="hamburgerMenu()">
+                    <ul class="navList">
+                        <li class="navItem" ><a href="../">HOME</a></li>
+                        <li class="navItem" ><a href="../adventures/">ADVENTURES</a></li>
+                        <li class="navItem selected" ><a href="../bikes/">BIKES</a></li>
+                        <li class="navItem" ><a href="../parts/">PARTS</a></li>
+                        <li class="navItem" ><a href="../contact/">CONTACT US</a></li>
+                        
+                    </ul>
+                    
+                    <label for="box">
+
+                        <img id="menuPicID" class="menuPic burger" src="http://themountain.pickinio.com/images/menu/burger.png" alt="Menu">
+
+                    </label>
+                    
+                </nav>
+                
+                <div class="menuShade"></div>
+            </header>
+                
+            <main>
+                <a href="shred-20/">               
+                    <div class="feature">
+                        <img class="featureImage" src="../images/products/bikes/kona-shred-20-1500.jpg" alt="Kona Mountain Bike">
+                        <h2 class="red">FEATURED RIDE:<br>SHRED 20</h2>
+                    </div>
+                </a>
+                
+                
+                <h2>BIKES</h2>
+                <p class="pageDescription">The Mountain is an authorized retailer of Kona Bicycles. They're all we sell because we think they're the best.<br>Our selection can fit ANY budget!</p>
+                <div class="columns">
+                    
+                    <a href="honzo-al/">
+                        <div class="product single double triple">
+                            <img class="productImage" src="../images/products/bikes/honzo-al-600.jpg" alt="Honzo AL">
+                            <h3 class="red">Honzo AL</h3>
+                            <h3 class="bikePrice redIn">$1599</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="shred-20/">
+                        <div class="product single double triple">
+                            <img class="productImage" src="../images/products/bikes/kona-shred-20-600.jpg" alt="Shred 20">
+                            <h3 class="red">Shred 20</h3>
+                            <h3 class="bikePrice redIn">$559</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="operator/">
+                        <div class="product single double triple">
+                            <img class="productImage" src="../images/products/bikes/operator-600.jpg" alt="Operator">
+                            <h3 class="red">Operator</h3>
+                            <h3 class="bikePrice redIn">$3199</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="blast/">
+                        <div class="product single double triple">
+                            <img class="productImage" src="../images/products/bikes/blast-600.jpg" alt="Blast">
+                            <h3 class="red">Blast</h3>
+                            <h3 class="bikePrice redIn">$899</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="mohala/">        
+                        <div class="product single double triple">
+                            <img class="productImage" src="../images/products/bikes/mohala-600.jpg" alt="Mohala">
+                            <h3 class="red">Mohala</h3>
+                            <h3 class="bikePrice redIn">$1199</h3>
+                        </div>
+                    </a>
+                    
+                    <a href="makena/">
+                        <div class="product single double triple">
+                            <img class="productImage" src="../images/products/bikes/makena-600.jpg" alt="Makena">
+                            <h3 class="red">Makena</h3>
+                            <h3 class="bikePrice redIn">$399</h3>
+                        </div>
+                    </a>
+                
+                </div>
+                
+            </main>
+            
+            <footer>
+                &#169; 2016 | The Mountain - Bozeman, Montana
+                <br>
+                <a href="mailto:inquiries@themountain.pickinio.com">The Mountain</a> | (406) 555-BIKE | Last updated 12/13/2016
+                <br>
+                <a href="http://themountain.pickinio.com/pdf/siteplan.pdf" target="_blank">Site Plan</a>
+                <a href="http://themountain.pickinio.com/pdf/resources.pdf" target="_blank">Resources</a>
+                
+            </footer>
+        </div>
+        
+        
+    </body>
+
+</html>

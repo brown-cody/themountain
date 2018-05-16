@@ -1,0 +1,67 @@
+
+
+.product {
+    position:relative;
+    padding:.5em;
+    opacity:.7;
+    z-index:-1: 
+}
+
+.product h3 {
+    position:absolute;
+    top:0;
+    background:black;
+    color:white;
+    padding:.4em;
+    margin:.4em;
+    z-index: -1;
+}
+
+.product .bikePrice {
+    top:1.7em;
+    left:.4em;
+    background:none;
+    color:black;
+}
+
+.productImage {
+    width:100%;
+    position:relative;
+    z-index: -1;
+}
+
+.product:hover {
+    opacity:1;
+}
+
+h3 {
+    text-align: center;
+}
+
+footer {
+    padding:1.5em;
+    clear:both;
+}
+
+.single {
+    padding:1em;
+    width:calc(100% - 2em);
+}
+
+@media only screen and (min-width:480px) {
+    
+    .double {
+        padding:1em;
+        width:calc(50% - 2em);
+    }
+    
+}
+
+@media only screen and (min-width:1050px)   {
+
+    
+    .triple {
+        padding:1em;
+        width:calc(33% - 2em);
+    }
+}

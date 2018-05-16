@@ -1,0 +1,352 @@
+html, body {
+    overflow-x:hidden;
+    height:100%;
+    
+}
+
+
+
+.contactInfo {
+    margin: 0;
+    font-style:normal;
+    text-align: center;
+}
+
+.bottom {
+    margin-bottom: 2em;
+}
+
+
+.map {
+    width:100%;
+}
+
+textarea, .field {
+    width:calc(100% - .5em);
+    border:2px solid black;
+    font-size:1.5em;
+    padding-left:.5em;
+    color:#888888
+}
+
+.field {
+    height:2em;
+}
+
+.contactContain h3{
+    margin-top:-1em;
+}
+
+.registration h3 {
+    margin-top:1em;
+}
+
+.contactContain form {
+    max-width:480px;
+    margin:auto;
+}
+
+.pageContainer {
+    font-family: "Monda", "Century Gothic", "Arial", sans-serif; 
+    
+}
+
+a {
+    color:black;
+}
+
+.navList {
+    padding:0;
+    position:fixed;
+    right:0;
+    top:2em;
+    width:100%;
+    display:none;
+}
+
+.navItem {
+    list-style-type: none;
+    
+}
+
+.boxActivate[type=checkbox]:checked ~ .navList {
+    display:block;
+}
+
+.navItem a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size:1.25em;
+    width:100%;
+    display:inline-block;
+    padding:.7em;
+    background:rgba(255,255,255,.95);
+    z-index: -1;
+}
+
+.navItem a:hover {
+    background:rgba(0,0,0,.95);
+    color:white;
+}
+
+.selected {
+     background:black;
+}
+
+.selected a {
+   background:black;
+    color:white;
+}
+
+header {
+    position:fixed;
+    z-index: 2;    
+}
+
+.logo {
+    width:50px;
+    float:left;
+    position:relative;
+    z-index: 2;
+}
+
+.pageTitle {
+    font-size:1em;
+    padding-top: .35em;
+    margin:0;
+    position:relative;
+    z-index: 2;
+    width:11em;
+}
+
+.titleLink {
+    text-decoration: none;
+}
+
+.selected {
+    display:block;
+}
+
+main {
+    clear:both;
+    position:static;
+    padding-top:3em;
+    /*background:gray;*/
+}
+
+
+.menuShade {
+    background:rgba(255,255,255,.95);
+    width:100%;
+    height:3em;
+    position:fixed;
+    top:0;
+    z-index: 1;
+}
+
+.menuPic {
+    width:40px;
+    position:fixed;
+    top:0;
+    right:0;
+    margin:.25em;
+    z-index: 2;
+}
+
+.boxActivate {
+    display:none;
+}
+
+.featureImage {
+    width:100%;
+    
+}
+
+.feature {
+    max-width: 1500px;
+    margin:auto;
+    position:relative;
+    z-index: -1;
+}
+
+.feature h2 {
+    font-size: 1em;
+    text-align: left;
+    position:absolute;
+    top:0;
+    border:none;
+    background:rgba(0,0,0,.85);
+    color:white;
+    margin:.5em;
+    line-height:normal;
+}
+
+.pageDescription {
+    text-align: center;
+    padding:0 2em;
+}
+
+.columns {
+    max-width: 1500px;
+    padding-top:2em;
+    margin:auto;
+}
+
+h2 {
+    text-align: center;
+    padding:.5em;
+    border-bottom: 6px solid black;
+    max-width:1300px;
+    margin:auto;
+}
+
+
+
+footer {
+    text-align: center;
+    clear:both;
+}
+
+.single {
+    float:left;
+    padding:1em;
+    width:calc(100% - 2em);
+    margin:auto;
+}
+
+
+.heavy {
+    font-weight: bold;
+}
+
+.blue {
+    background:rgb(57,72,168) !important;
+    color:rgb(215,215,229) !important;
+}
+
+.blueIn {
+    background:rgb(215,215,229) !important;
+    color:rgb(57,72,168) !important;
+}
+
+.green {
+    background:rgb(9,109,82) !important;
+    color:rgb(121,249,187) !important;
+}
+
+.greenIn {
+    background:rgb(121,249,187) !important;
+    color:rgb(9,109,82) !important;
+}
+
+.red {
+    background:rgb(208,74,74) !important;
+    color:rgb(242,242,231) !important;
+}
+
+.redIn {
+    background:rgb(242,242,231) !important;
+    color:rgb(208,74,74) !important;
+}
+
+
+@media only screen and (min-width:480px)   {
+    
+    .feature h2 {
+        font-size: 1.5em;
+        line-height:normal;
+    }
+    
+    .double {
+        
+        padding:1em;
+        width:calc(50% - 2em);
+    }
+    
+    .pageTitle {
+        font-size: 1.5em;
+    }
+    
+    .centerIt {
+        text-align: center;
+    }
+    
+}
+
+
+@media only screen and (min-width:1050px)   {
+    
+    .menuPic {
+        display:none;
+    }
+    
+    .menuShade {
+        height:3.2em;
+        position:relative;
+        top:-5.4em;
+        z-index: 1;
+    }
+    
+    .centerIt {
+        text-align: left;
+    }
+    
+    nav {
+        overflow:auto;
+        display:block;
+        width:37.2em;
+        margin:auto;
+        position:relative;
+        top:-2.2em;
+        z-index: 2;
+    }
+    
+    .navList {
+        display:inline;
+        position:static;
+        background:none;
+    }
+    
+    .navItem {
+        float:left;
+    }
+    
+    .navItem a {
+        width:auto;
+        background:none;
+        z-index: 1;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+    
+    header {
+        position:static;
+    }
+    
+    
+    main {
+        padding-top:0;
+        margin-top:-5.4em;
+    }
+    
+    .feature h2 {
+        font-size: 2em;
+    }
+    
+    p,  .specs li {
+        font-size: 1.5em;
+    }
+    
+    .triple {
+        padding:1em;
+        width:calc(33% - 2em);
+    }
+    
+}
+
+@media only screen and (min-width:2000px)   {
+    
+}

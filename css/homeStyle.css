@@ -1,0 +1,222 @@
+html, body {
+    height:auto;
+}
+
+.pageContainer {
+    overflow:hidden;
+}
+
+.mainImage {
+    position:relative;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+    opacity: .4;
+    filter: blur(2px);
+    width:935px;
+    z-index: -2;
+    
+    
+}
+
+header {
+    position:static;
+}
+
+.titleContain {
+    position:absolute;
+    top:5em;
+    left:50%;
+    transform:  translateX(-50%);
+    overflow:hidden;
+    width:15em;
+    text-align: center;
+}
+
+.selected {
+    display:none;
+    
+}
+
+
+
+
+.titleContain a {
+    display:inline-block;
+    
+        
+}
+
+.logo {
+    width:110px;
+    display:block;
+    margin:auto;
+}
+
+.pageTitle {
+    margin:0;
+    text-align: center;
+    font-size: 1.8em;
+    width:auto;
+    
+}
+
+.linkGroup {
+    position:absolute;
+    top:15em;
+    left:50%;
+    transform:  translateX(-50%);
+    overflow:hidden;
+    width:15em;
+    
+}
+
+.link, .mainLink {
+    text-align: center;
+    background:none;
+    color:black;
+    font-weight: bold;
+    font-size: .9em;
+    margin:1em;
+    
+}
+
+.firstLink {
+    margin-top: 2em;
+}
+
+
+.mainLink a {
+    text-decoration: none;
+    color:black;
+    padding: 1em;
+    display:block;
+    border:solid black 3px;
+}
+
+.mainLink a:hover {
+    border-color:rgba(0,0,0,.5);
+    color:rgba(0,0,0,.8);
+}
+
+.link a {
+    text-decoration: none;
+    padding:0;
+    margin:1em;
+    display:inline-block;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding:1em;
+    position:absolute;
+    top:611px;
+    left:50%;
+    transform:translateX(-50%);
+    text-align: center;
+    width:100%;
+    background:rgba(255,255,255,.9);
+    font-size: .75em;
+}
+
+
+
+
+@media only screen and (min-width:600px)   {
+    
+    .mainImage {
+        
+        width:2000px;
+    
+    
+    }
+    
+    .logo {
+        width:200px;
+    }
+    
+    .pageTitle {
+        font-size: 2em;
+    }
+    
+    .titleContain {
+        
+        top:8em;
+        width:18em;
+    }
+    
+    .linkGroup {
+        top:26em;
+        width:20em;
+    }
+    
+    .link, .mainLink {
+        font-size: 1.2em;
+    }
+    
+    footer {
+        top:1320px;
+        /*top:975px;*/
+    }
+    
+    
+}
+
+
+@media only screen and (min-width:768px)   {
+    
+    
+    nav {
+        width:31.7em;
+    }
+    
+    footer {
+        top:1320px;
+    }
+    
+}
+
+@media only screen and (min-width:1050px)   {
+ 
+    main {
+        
+    }
+    
+    .menuShade {
+        top:-3.2em;
+        z-index: 1;
+    }
+    
+    nav {
+        top:0;
+    }
+    
+    
+    footer {
+        top:1289px;
+    }
+    
+    
+}
+
+@media only screen and (min-width:2000px)   {
+    
+    
+    .mainImage {
+        width:100%;
+    }
+    
+    .pageContainer {
+        overflow-y: hidden;
+        overflow-x:hidden;
+    }
+    
+    footer {
+        position:static;
+        transform: translateX(0);
+    }
+}
